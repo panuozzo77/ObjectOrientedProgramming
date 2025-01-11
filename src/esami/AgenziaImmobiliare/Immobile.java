@@ -1,4 +1,4 @@
-package AgenziaImmobiliare;
+package esami.AgenziaImmobiliare;
 
 public class Immobile {
     private String nomeLocatore;
@@ -6,6 +6,14 @@ public class Immobile {
     private String indirizzo;
     private boolean forCommercialUse;
     private boolean isFree;
+
+    public String getNomeConduttore() {
+        return nomeConduttore;
+    }
+
+    public void setNomeConduttore(String nomeConduttore) {
+        this.nomeConduttore = nomeConduttore;
+    }
 
     public Immobile(String nome, String nomeC, String indirizzo, boolean commercial) {
         this.nomeLocatore = nome;

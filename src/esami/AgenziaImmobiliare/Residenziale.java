@@ -1,4 +1,4 @@
-package AgenziaImmobiliare;
+package esami.AgenziaImmobiliare;
 
 public class Residenziale extends Immobile {
     private int vani;
