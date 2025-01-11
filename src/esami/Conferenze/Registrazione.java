@@ -1,5 +1,7 @@
 package esami.Conferenze;
 
+import esami.Conferenze.exception.BadDateException;
+
 import java.io.Serializable;
 import java.util.GregorianCalendar;
 

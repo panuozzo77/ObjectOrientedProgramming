@@ -1,6 +1,6 @@
 package esami.Conferenze;
 
-import esercizietti.lambda_stream.Persona;
+import esami.Conferenze.exception.BadDateException;
 
 import java.io.Serializable;
 import java.util.GregorianCalendar;

@@ -1,5 +1,7 @@
 package esami.Conferenze;
 
+import esami.Conferenze.exception.RegistrationException;
+
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -8,7 +10,7 @@ import java.util.GregorianCalendar;
 public class ManageRegistrazioni {
     private ArrayList<Registrazione> list = new ArrayList<>();
 
-    public void aggiungiRegistrazione(Registrazione r) throws RegistrationException{
+    public void aggiungiRegistrazione(Registrazione r) throws RegistrationException {
         // Controlla se una registrazione con lo stesso nome e cognome esiste già
         for (Registrazione reg : list) {
             if (reg.getNome().equalsIgnoreCase(r.getNome()) && reg.getCognome().equalsIgnoreCase(r.getCognome())) {
@@ -47,7 +49,7 @@ public class ManageRegistrazioni {
         return counter;
     }
 
-    ArrayList<Registrazione> cerca(GregorianCalendar data) {
+    public ArrayList<Registrazione> cerca(GregorianCalendar data) {
         ArrayList<Registrazione> accumulator = new ArrayList<>();
         list.stream().filter(t -> t.getData().equals(data)).forEach(t -> accumulator.add(t));
         return accumulator;

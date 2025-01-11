@@ -1,5 +1,7 @@
 package esami.Conferenze;
 
+import esami.Conferenze.exception.BadDateException;
+
 public class DataRegistrazione {
     private int giorno;
     private int mese;

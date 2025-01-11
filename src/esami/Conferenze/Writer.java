@@ -1,5 +1,7 @@
 package esami.Conferenze;
 
+import esami.Conferenze.exception.BadDateException;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;

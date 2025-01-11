@@ -1,10 +1,9 @@
 package esami.Conferenze;
 
-import esercizietti.lambda_stream.Persona;
+import esami.Conferenze.exception.BadDateException;
 
 import java.io.Serializable;
 import java.util.GregorianCalendar;
-import java.util.Set;
 
 public class Professionista extends Registrazione implements Serializable {
     private String nomeAzienda;
