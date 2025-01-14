@@ -11,8 +11,7 @@ public class Reader {
     public static void main(String[] args) {
         ArrayList<MyClass> list = new ArrayList<>();
         try{
-            FileReader fr = new FileReader("fileWriter.txt");
-            BufferedReader br = new BufferedReader(fr);
+            BufferedReader br = new BufferedReader(new FileReader("fileWriter.txt"));
             String line = "";
             while((line = br.readLine()) != null){
                 System.out.println(line);
